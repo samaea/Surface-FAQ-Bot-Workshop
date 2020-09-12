@@ -61,25 +61,40 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
         ![Azure Porta - creating a QnAMaker instance](./images/azure-portal-2.png)
      - Click on **Keys and Endpoint**
      - Click on **Show Keys**
-     - **Take note** of **Key1**. For example, copy it to notepad or Word.
-
+     - **Take note** of **Key1**, which is our authoring key. For example, copy it to notepad or Word.
         ![Azure Porta - Keys and Ednpoint](./images/azure-portal-3.png)
+     - Now we have the authoring key, we will also need the query key. In another tab, **Navigate to https://www.qnamaker.ai**
+     - On the top right hand corner of the page, **click on the icon that has your first and last name initials**.
+        ![Azure Porta - QnAMaker portal](./images/qnamaker-portal.png)     
+     - Click on **Show** next to the key belonging to the **QnaMaker** resouce you just deployed earlier. **Take note** of this key as your query endpoint key.
+     >IMPORTANT:- You should now have taken notes of two keys, QnAMaker's authoring and query endpoint keys. You will need these keys in the next steps.
 
 ### 1. Building our Surface FAQ Bot locally!
 
-  We will now begin to build out our bot locally and publish it to Azure later, when we wish to connect to our bot through channels such as Microsoft Teams.
+  We will now begin to build out our FAQ bot locally and publish it to Azure later, when we wish to connect to our bot through channels such as Microsoft Teams. Bot Framework Composer integrates with QnAMaker without needing to create it through the qnamaker.ai portal.
 
   1. **Open** the Bot Framework Composer application by searching through it in the start menu
   
       ![Opening Bot Framework Composer via the start menu](./images/startmenu-composer.png)
        
-  1. Click on **New** --> **Create from Template** -> **Echo Bot** -> name your bot **Image Recognizer Bot** and click **OK**
+  1. Let's create a new Bot Framework Composer
+  
+     - Click on **New**
+     - **Create from Knowledge base (QnAMaker)**
+     - Click on **Next**
 
-      ![Bot Framework Composer - New project](./images/BFComposer.png)
+      ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-2.png)
 
-      ![Bot Framework Composer - Create from template, Echo Bot](./images/BFComposer-2.png)
+     - Select the **Name** field and name your bot e.g. **SurfaceFAQBot**
+     - Click on **Next**
 
-      ![Bot Framework Composer - Naming Bot Project](./images/BFComposer-3.png)
+      ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-3.png)
+
+     - Under **URL** input the following URL **https://github.com/samaea/Surface-FAQ-Bot-Workshop/raw/master/downloads/product-manual.pdf**. This is the Surface Book User Guide we will use to form our knowledge base from.
+     - Click on **Create knowledge base**
+     > A knowledge base consists of question and answer pairs. This can be brought manually or by public URLs and files (PDF, docx, etc). Once defined, QnAMaker will crawl the destination source and automatically extract the pair of questions and answers from it. For more information on different content-types supported by QnAMaker, please visit [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/content-types).
+
+      ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-4.png)
 
   1. >You will notice it creates by default two dialogs, one called "Unknown Intent" and the other called "Greeting". "Unknown Intent" is the dialog that is run when Language Understanding is not able to determine the intent for the user. Greeting is run when a user joins a chat with the bot.
 
