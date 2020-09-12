@@ -77,7 +77,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
   
       ![Opening Bot Framework Composer via the start menu](./images/startmenu-composer.png)
        
-  1. Let's create a new Bot Framework Composer
+  1. Let's create a new Bot Framework Composer Project
   
      - Click on **New**
      - **Create from Knowledge base (QnAMaker)**
@@ -90,13 +90,24 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
       ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-3.png)
 
-     - Under **URL** input the following URL **https://github.com/samaea/Surface-FAQ-Bot-Workshop/raw/master/downloads/product-manual.pdf**. This is the Surface Book User Guide we will use to form our knowledge base from.
+     - Under **URL** input the following URL **https://github.com/samaea/Surface-FAQ-Bot-Workshop/raw/master/downloads/product-manual.pdf**. This is the Surface Book User Guide we will use to form our knowledge base from. Feel free to download the file yourself to see what is in it.
      - Click on **Create knowledge base**
      > A knowledge base consists of question and answer pairs. This can be brought manually or by public URLs and files (PDF, docx, etc). Once defined, QnAMaker will crawl the destination source and automatically extract the pair of questions and answers from it. For more information on different content-types supported by QnAMaker, please visit [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/content-types).
 
       ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-4.png)
 
-  1. >You will notice it creates by default two dialogs, one called "Unknown Intent" and the other called "Greeting". "Unknown Intent" is the dialog that is run when Language Understanding is not able to determine the intent for the user. Greeting is run when a user joins a chat with the bot.
+  1. From the previous step, you should have seen questions and answers being populated by QnAMaker from the URL we gave it.Let's add our own question and answer into QnAMaker 
+     - Click on **SurfaceBotFaq**
+     - Click on **Add QnA Pair**
+     - For the **question**, type in **What is your name?** and for the **answer** type in **My name is FAQ. Surface FAQ Bot**
+
+      ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-5.png)
+
+  1. Let's configure Bot Framework Composer project/bot to point to the QnAMaker instance we deployed in Azure.
+     - Click on the **Settings** cogwheel.
+     - In **Bot Settings**, you will notice a textbox field with JSON configuration in it, which represents the settings for your bot. **Scroll down** until you see the **qna** section.
+     - In between the blank quotations **""** next to **subscriptionKey**, input your QnAMaker authoring key obtained in previous steps. Similary, to do the same with **endpointKey**, but input your querying endpoint key.
+
 
       - Select the **Greeting** dialog and click on **Send a response** . Change the response to the following
 
