@@ -19,6 +19,7 @@ The following guide will help you develop step by step your own FAQ bot without 
 1. [Bot Framework Composer v1.1.1](https://github.com/microsoft/BotFramework-Composer/releases/download/v1.1.1/BotFramework-Composer-1.1.1-windows-setup.exe)
 1. [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases). 
 1. [Azure CLI](https://aka.ms/installazurecliwindows)
+1. [NodeJS](https://nodejs.org/en/download/)
 
       ***NOTE**:- Please take notice of the Bot Framework Composer version number and ensure that version is being used for this lab*
 
