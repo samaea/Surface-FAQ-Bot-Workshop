@@ -160,7 +160,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
      - Run the following command, but replace the following values:-
        - **\<YOUR AZURE SUBSCRIPTION ID\>** with the subscription id you noted in the previous step
-       - **\<NAME OF YOUR RESOURCE GROUP\>** with a **globally unique** name. For example, your **youralias-ImageRecognizerBot**
+       - **\<NAME OF YOUR RESOURCE GROUP\>** with a **globally unique** name. For example, your **youralias-SurfaceFAQBot**
        - **\<APP PASSWORD\>** with a password that is at least 16 characters long with at least one number, one letter, and one special character. You can use your own password or even an online password generator such as https://www.random.org/passwords/
           ```code
           node provisionComposer.js --subscriptionId=<YOUR AZURE SUBSCRIPTION ID> --name=<NAME OF YOUR RESOURCE GROUP>--appPassword=<APP PASSWORD> --environment=dev --createLuisAuthoringResource false --location westeurope --createCosmosDb false
@@ -234,6 +234,6 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
       
 ### 3 Final Wrap Up
 
-You have successfully created your own Image Analyser Bot, congrats! This guide will stay publicly available, so if you wish to create a demo for internal or external meetings, you can do so by performing the steps within your Azure Subscription since the Lab Service will be shut down after MS Ready to avoide costs. 
+You have successfully created your own Surface FAQ Bot, congrats! This guide will stay publicly available, so if you wish to create a demo for internal or external meetings, you can do so by performing the steps within your Azure Subscription since the Lab Service will be shut down after MS Ready to avoide costs. 
 
 Worth mentioning: developing a chatbot like you just did within an hour or so, would not be possible with the Azure PaaS Services and templates we were using. This is a huge benefit for the application development teams and accelerate pilots and new projects.
