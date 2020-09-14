@@ -1,5 +1,5 @@
-# Azure Image Recognizer Workshop
-**Welcome to the one and only Image Recognizer Bot Workshop**
+# Azure Surface FAQ Bot Workshop
+**Welcome to the one and only Surface FAQ Workshop**
 
 The following guide will help you develop step by step your own FAQ bot without the need of any code experience. We will use the [Bot Framework Composer](https://docs.microsoft.com/en-us/composer/introduction), which is a open-source visual authoring canvas for developers and multidisciplinary teams to build bots. By the end of the workshop, you would have created a bot capable of receiving and describing an image of your choice using Azure AI Cognitive Services.
 
