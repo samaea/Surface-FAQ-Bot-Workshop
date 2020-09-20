@@ -9,7 +9,7 @@ The following guide will help you develop step by step your own FAQ bot without 
   -  App Service
   -  **Azure Cognitive Services:**
       - QnAMaker
-      
+
 ## Prerequisites
 
 > It's important to ensure all of the following prerequisites are met:-
@@ -46,6 +46,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
   1. Fill in the respective fields:-
      - **Resource Group** select your desired resource group you would like to deploy QnAMaker to
      - **Name** give it a unique name. You could use your resouce group name appended by -qna. For example, **YOURRESOURCEGROUPNAME-qna**
+     - **Pricing tier** set it to **Standard S0 ($10 per month for unlimited documents, 3 transactions...)**
      - **Azure Search Location** set it to **West Europe**
      - **Azure Search pricing tier** set it to **Free F (3 Indexes)**
      - **App name** set it to the same value as **Name**. For example, **YOURRESOURCEGROUPNAME-qna**
