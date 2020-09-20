@@ -64,12 +64,6 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
      - Click on **Show Keys**
      - **Take note** of **Key1**, which is our authoring key. For example, copy it to notepad or Word.
         ![Azure Porta - Keys and Ednpoint](./images/azure-portal-3.png)
-     - Now we have the authoring key, we will also need the query key. In another tab, **Navigate to https://www.qnamaker.ai**
-     - On the top right hand corner of the page, **click on the icon that has your first and last name initials**.
-        ![Azure Porta - QnAMaker portal](./images/qnamaker-portal.png)     
-     - Click on **Show** next to the key belonging to the **QnaMaker** resouce you just deployed earlier. **Take note** of this key as your query endpoint key.
-        ![Azure Porta - QnAMaker portal](./images/qnamaker-portal-2.png)    
-     >IMPORTANT:- You should now have taken notes of two keys, QnAMaker's authoring and query endpoint keys. You will need these keys in the next steps.
 
 ### 1. Building our Surface FAQ Bot locally!
 
@@ -98,7 +92,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
       ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-4.png)
 
-  1. From the previous step, you should have seen questions and answers being populated by QnAMaker from the URL we gave it.Let's add our own question and answer into QnAMaker 
+  1. From the previous step, you should have seen questions and answers being populated by QnAMaker from the URL we gave it. Let's add our own question and answer into QnAMaker 
      - Click on **SurfaceBotFaq**
      - Click on **Add QnA Pair**
      - For the **question**, type in **What is your name?** and for the **answer** type in **My name is FAQ. Surface FAQ Bot**
@@ -106,16 +100,16 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
       ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-5.png)
 
-  1. Let's configure Bot Framework Composer project/bot to point to the QnAMaker instance we deployed in Azure.
+  1. Let's configure Bot Framework Composer project/bot to point to the QnAMaker instance we deployed in Azure and then run our bot.
 
-     - In **Bot Settings**, you will notice a textbox field with JSON configuration in it, which represents the settings for your bot. **Scroll down** until you see the **qna** section.
-     - In between the blank quotations **""** next to **subscriptionKey**, input your QnAMaker authoring key obtained in previous steps. Similary, to do the same with **endpointKey**, but input your querying endpoint key.
-     - Finally, click on **Start Bot**
+     - Click on **Start Bot** located on the top right hand corner.
+     - For the **QNA Subscription key** field, input your QnAMaker authoring key obtained in the previous steps.
+     - Click on **OK**
 
-      ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-6.png)
+      ![Bot Framework Composer - Create from knowledge base](./images/BFComposer-11.png)
 
 
-  1. Time to test the bot out locally!
+  1. Time to test our bot locally using the Emulator!
      - Click on **Test in Emulator** , right next to the **Restart Bot** button, which was previously called **Start Bot**
      - Speak to the bot by asking it similar questions to the ones we populated earlier.
 
