@@ -8,9 +8,8 @@ The following guide will help you develop step by step your own FAQ bot without 
   -  Storage account
   -  App Service
   -  **Azure Cognitive Services:**
-      - LUIS (Language Understanding Intelligent Service)
-      - Computer Vision API
-
+      - QnAMaker
+      
 ## Prerequisites
 
 > It's important to ensure all of the following prerequisites are met:-
