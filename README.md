@@ -121,7 +121,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
   >In order to speak with our bot outside of our over channels such as Teams
   1. Find out the location of your bot by clicking on the **Home** icon and reviewing the **Location** column. E.g. C:\Users\hussel\Bots\SurfaceFAQBot
 
-      ![Bot Framework Composer - Home](./images/bfcomposer-7.png) 
+      ![Bot Framework Composer - Home](./images/BFComposer-7.png) 
 
   1. We will also need to know the Azure Subscription Id of the subscription we will deploy our bot to:-
 
