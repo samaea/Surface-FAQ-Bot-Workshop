@@ -156,7 +156,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
      - Run the following command, but replace the following values:-
        - **\<YOUR AZURE SUBSCRIPTION ID\>** with the subscription id you noted in the previous step
        - **\<NAME OF YOUR RESOURCE GROUP\>** with a **globally unique** name. For example, your **youralias-SurfaceFAQBot**
-       - **\<APP PASSWORD\>** with a password that is at least 16 characters long with at least one number, one letter, and one special character. You can use your own password or even an online password generator such as https://www.random.org/passwords/
+       - **\<APP PASSWORD\>** with a password that is at least 16 characters long with at least one number, one letter, and one special character. You can use your own password or even an online password generator such as https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new. Afterwards, **just add an @ symbol at the end of the random password in order to meet the minimum password requirement e.g. mAgZj3B4CQbqeZG9@**.
           ```code
           node provisionComposer.js --subscriptionId=<YOUR AZURE SUBSCRIPTION ID> --name=<NAME OF YOUR RESOURCE GROUP>--appPassword=<APP PASSWORD> --environment=dev --createLuisAuthoringResource false --location westeurope --createCosmosDb false
           ```
