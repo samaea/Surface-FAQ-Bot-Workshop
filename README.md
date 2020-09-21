@@ -210,8 +210,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
       - For the **Name** give it any name e.g. **Azure Publish Profile**
       - For the **Publish Destination** select **Publish bot to an Azure Web App (Preview)**
       - **Paste** the JSON output from the previous step into the **Publish Configuration** field
-      - Locate the **endpoint** key in **Publish Configuration** and insert your **QnAMaker querying endpoint** key in between the two qoutations.
-      - Locate the **subscriptionKey** key underneath **endpoint** and insert your **QnAMaker authoring key**
+      - Locate the **subscriptionKey** key in **Publish Configuration** and insert your **QnAMaker authoring key**
       - Click **Save**
         ![Bot Framework Composer - Publish ](./images/BFComposer-9.png)      
       - Click on **Publish to select profile**
